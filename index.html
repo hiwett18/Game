@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel='stylesheet' href='style.css' />
+</head>
+<body>
+    
+    <div class="gameboard">
+        <h1>Tic-Tac-Toe</h1>
+        <table id="tbl">
+            <tr id="cell">
+                <td><button class="btn" id="one"></button></td>
+                <td><button class="btn" id="two"></button></td>
+                <td><button class="btn" id="three"></button></td>
+            </tr>
+            <div id="hide-row">
+                <tr id="hide-sub-row">
+                    <td colspan="3">
+                        <div class="win-container">
+                            <h2>YOU WIN!!!</h1>                               
+                        </div>
+                        <div class="lose-container">
+                            <h2>YOU LOSE! PLAY AGAIN!</h1>
+                        </div>
+                    </td>
+                    
+                </tr>
+            </div>
+            <tr id="cell">
+                <td><button id="four"></button></td>
+                <td><button id="five"></button></td>
+                <td><button id="six"></button></td>
+            </tr>
+            <tr id="cell">
+                <td><button id="seven"></button></td>
+                <td><button id="eight"></button></td>
+                <td><button id="nine"></button></td>
+            </tr>
+        </table>
+        <br>
+        <button class="ply-btn" onClick="window.location.href=window.location.href">Play Again</button>
+    </div>
+<script src="my-script.js"></script>  
+</body>
+</html>
